@@ -3,7 +3,7 @@ python3 --version
 
 # chmod +x ./execute.sh (change the permission of the file)
 
-if [ ! -d ".venv"]; then
+if [ ! -d ".venv" ]; then
     python3 -m venv .venv
     source .venv/bin/activate
 else
@@ -11,5 +11,8 @@ else
     source .venv/bin/activate
 fi
 
+pip list
+# pip install -r pylibs.txt
 
+deactivate
 # Run the Python script
